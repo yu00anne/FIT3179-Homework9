@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 9</title>
+    <title>Homework 10</title>
 
     <!-- Import Vega & Vega-Lite -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
@@ -16,17 +16,31 @@
 
 </head>
 <body>
+    <h3 style="text-align: center;">Homework 9 Choropleth Map</h3>
 
-    <div id="homework9_map"></div>
+    <div id="homework9_map">
+        <script type="text/javascript">
 
-    <script type="text/javascript">
+            var map1 = "js/homework9_map.json";
+            vegaEmbed('#homework9_map', map1).then(function(result) {
+                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
 
-        var map1 = "js/homework9_map.json";
-        vegaEmbed('#homework9_map', map1).then(function(result) {
-            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
+        </script>
+    </div>
+    
+    <h3 style="text-align: center;">Homework 10 Scatter Plot</h3>
 
-    </script>
+    <div id="homework10_bubble">
+        <script type="text/javascript">
+
+            var map1 = "js/homework10_bubble.json";
+            vegaEmbed('#homework10_bubble', map1).then(function(result) {
+                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+
+        </script>
+    </div>
 
 </body>
 </html>
